@@ -1,6 +1,45 @@
 body {
-	 background-color: green;
- }
- div{
-	color: black;
+    margin: 0;
+    padding: 0;
+}
+div.books {
+    margin: 20px 20px 20px 50px;
+    height: 310px;
+    width: 800px;
+}
+div.img {
+    float:left;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 300px;
+}
+img {
+    width: 200px;
+    height: 300px;
+    border: 0;
+}
+.description > p {
+    text-align: justify;
+}
+.infoBooks {
+    width: 540px;
+    height: 280px;
+    display: inline-block;
+    margin:20px 0 0 20px;
+    float:left;
+    position:relative;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+.formWithButton {
+    position: absolute;
+    bottom: 0;
+}
+.fullDescription {
+    clear: both;
+    padding-top: 20px;
 }
