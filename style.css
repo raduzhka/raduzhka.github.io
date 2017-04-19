@@ -34,7 +34,7 @@ img {
 .description > p {
     text-align: justify;
 }
-.infoBooks {
+.infoBook {
     width: 540px;
     height: 280px;
     display: inline-block;
