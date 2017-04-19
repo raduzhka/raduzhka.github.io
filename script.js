@@ -1,15 +1,10 @@
 $(window).on('load', function(){
-    var app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue!'
-        }
-    })
+
 });
 $(document).ready(function(){
     $.ajax ({
         type: 'GET',
-        url: 'http://koskapanbooks.azurewebsites.net/api/Books',
+        url: 'https://koskapanbooks.azurewebsites.net/api/Books',
         ContentType: 'application/json',
         success: function (dataBook){
             console.log(dataBook);
@@ -26,4 +21,10 @@ $(document).ready(function(){
             alert ('fail');
         }
     });
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
 });
