@@ -56,5 +56,5 @@ hr {
     padding-top: 20px;
 }
 [v-cloak] {
-    display: none;
+    visibility: hidden;
 }
