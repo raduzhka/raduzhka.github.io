@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Подробнее о книге</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="jquery-3.2.1.min.js" language="JavaScript" type="text/javascript"></script>
+    <script src="alert/dist/sweetalert.min.js" language="JavaScript" type="text/javascript"></script>
     <script src="script.js" language="JavaScript" type="text/javascript"></script>
-    <script src="alert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="alert/dist/sweetalert.css">
-    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
-    <script
-            src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-            crossorigin="anonymous"></script>
 </head>
 <body>
 <section>
@@ -19,9 +16,9 @@
         <div class="img">
             <!--<img src="img/1.jpg">-->
         </div>
-        <div class="infoBooks">
-            <span id="title">
-                     <strong>Мир Льда и Пламени. Официальная история Вестероса и Игры Престолов</strong>
+        <div class="infoBook">
+            <span id="titleBook" v-cloak>
+                     {{titleBook}}
             </span>
             <p class="author">
                 <span>Автор:</span>
